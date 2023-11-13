@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import imgLogo from "../../assets/images/fazztrack.svg";
-import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
   return (

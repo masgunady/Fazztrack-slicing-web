@@ -1,70 +1,108 @@
-import { Link, useNavigate } from "react-router-dom";
-import { FiAlignJustify } from "react-icons/fi";
-import logo from "../assets/images/kelontong-logo.png";
-import { useDispatch, useSelector } from "react-redux";
-import { logout as logoutAction } from "../redux/reducers/auth";
+import { Link } from "react-router-dom";
+import imgLogo from "../assets/images/fazztrack.svg";
 
-function Header() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const token = useSelector((state) => state.auth.token);
-  const doLogout = () => {
-    dispatch(logoutAction());
-    navigate("/auth/login");
-  };
+const Header = () => {
   return (
     <>
-      <nav className="w-full h-24 px-7 xl:px-36 fixed z-20 bg-white rounded-b-2xl drop-shadow-sm">
-        <div className="w-full h-full flex items-center justify-between">
-          <div className="flex items-center justify-start gap-4 text-primary text-xl font-bold">
-            <Link to="/">
-              <img src={logo} className="w-16" alt="" />
-            </Link>
-            <div className="capitalize">
-              Kelontong <br /> Kami
+      <nav className="w-full flex flex-col justify-center items-center shadow-md">
+        <div className="w-full max-w-[1280px] flex justify-between items-center py-4">
+          <div className="flex justify-start items-center gap-16">
+            <img src={imgLogo} alt="" className="w-32" />
+            <div>
+              <ul className="menu lg:menu-horizontal rounded-box text-black">
+                <li>
+                  <details>
+                    <summary className="font-bold">Kelas</summary>
+                    <ul className="w-72">
+                      <li>
+                        <p>BOOTCAMP</p>
+                      </li>
+                      <li>
+                        <a>Fullstack Mobile</a>
+                      </li>
+                      <li>
+                        <a>Fullstack Web dan Golang</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary className="font-bold">Dukungan</summary>
+                    <ul className="w-72">
+                      <li>
+                        <p>BOOTCAMP</p>
+                      </li>
+                      <li>
+                        <a>Fullstack Mobile</a>
+                      </li>
+                      <li>
+                        <a>Fullstack Web dan Golang</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary className="font-bold">Tentang</summary>
+                    <ul className="w-72">
+                      <li>
+                        <p>BOOTCAMP</p>
+                      </li>
+                      <li>
+                        <a>Fullstack Mobile</a>
+                      </li>
+                      <li>
+                        <a>Fullstack Web dan Golang</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary className="font-bold">Corporate</summary>
+                    <ul className="w-72">
+                      <li>
+                        <p>BOOTCAMP</p>
+                      </li>
+                      <li>
+                        <a>Fullstack Mobile</a>
+                      </li>
+                      <li>
+                        <a>Fullstack Web dan Golang</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
             </div>
           </div>
-          {token && (
-            <div className="hidden md:flex items-center gap-8">
-              <button
-                onClick={doLogout}
-                className="btn btn-ghost w-28 capitalize text-primary text-lg font-medium tracking-normal"
-              >
-                Logout
-              </button>
-            </div>
-          )}
-          {!token && (
-            <div className="hidden md:flex items-center gap-8">
-              <Link
-                to="/auth/login"
-                className="btn btn-ghost w-28 capitalize text-primary text-lg font-medium tracking-normal"
-              >
-                Login
-              </Link>
-              <Link
-                to="/auth/register"
-                className="btn btn-secondary w-28 capitalize text-white text-lg font-medium tracking-normal"
-              >
-                Register
-              </Link>
-            </div>
-          )}
-          <div className="block md:hidden">
-            <div>
-              <button>
-                <i className="">
-                  <FiAlignJustify size={35} />
-                </i>
-              </button>
-            </div>
+          <div className="flex gap-3 justify-center items-center">
+            <Link
+              to={"/auth/login"}
+              className="btn btn-neutral w-20 bg-slate-100 hover:bg-slate-200 hover:border-secondary capitalize text-secondary font-bold border border-secondary"
+            >
+              Masuk
+            </Link>
+            <Link
+              to={"/auth/register"}
+              className="btn btn-secondary w-20 capitalize text-white font-bold border border-secondary"
+            >
+              Daftar
+            </Link>
           </div>
         </div>
       </nav>
-      <div className="pt-24" />
+      <div className="w-full flex justify-center items-center py-3 bg-primary/30">
+        <div className="text-black">
+          Belum siap ikut test?{" "}
+          <Link to={""} className="text-primary font-bold underline">
+            Ikut Kelas Persiapan Bootcamp
+          </Link>
+        </div>
+      </div>
     </>
   );
-}
+};
 
 export default Header;
