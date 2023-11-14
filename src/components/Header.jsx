@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <>
       <nav className="w-full flex flex-col justify-center items-center shadow-md">
-        <div className="w-full max-w-[1080px] flex justify-between items-center py-4">
+        <div className="w-full max-w-[1080px] flex justify-between items-center px-5 xl:px-0 py-4">
           <div className="flex justify-start items-center gap-16">
             <img src={imgLogo} alt="" className="w-32" />
-            <div>
+            <div className="hidden lg-block">
               <ul className="menu lg:menu-horizontal rounded-box text-black">
                 <li>
                   <details>
@@ -77,7 +77,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="flex gap-3 justify-center items-center">
+          <div className="hidden lg:flex gap-3 justify-center items-center">
             <Link
               to={"/auth/login"}
               className="btn btn-neutral w-20 bg-slate-100 hover:bg-slate-200 hover:border-secondary capitalize text-secondary font-bold border border-secondary"
@@ -94,7 +94,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="w-full flex justify-center items-center py-3 bg-primary/30">
-        <div className="text-black">
+        <div className="text-black text-center">
           Belum siap ikut test?{" "}
           <Link to={""} className="text-primary font-bold underline">
             Ikut Kelas Persiapan Bootcamp

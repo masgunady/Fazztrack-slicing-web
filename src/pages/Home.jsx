@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <section className="w-full flex flex-col justify-center items-center gap-11 pt-24 pb-28">
+      {/* <section className="w-full flex flex-col justify-center items-center gap-11 pt-24 pb-28">
         <div className="max-w-[1080px] flex flex-col justify-center items-center gap-9">
           <div className="w-full flex items-center justify-between gap-11 pb-7">
             <div className="flex flex-col gap-11 w-[70%]">
@@ -773,7 +773,7 @@ const Home = () => {
         <Link className="btn btn-primary text-white capitalize font-semibold text-lg">
           Daftar Sekarang
         </Link>
-      </section>
+      </section> */}
       <Footer />
     </>
   );
