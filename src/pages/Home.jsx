@@ -10,31 +10,33 @@ const Home = () => {
   return (
     <>
       <Header />
-      {/* <section className="w-full flex flex-col justify-center items-center gap-11 pt-24 pb-28">
+      <section className="w-full flex flex-col justify-center items-center gap-11 pt-24 pb-28">
         <div className="max-w-[1080px] flex flex-col justify-center items-center gap-9">
-          <div className="w-full flex items-center justify-between gap-11 pb-7">
-            <div className="flex flex-col gap-11 w-[70%]">
+          <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-11 pb-7">
+            <div className="flex flex-col gap-11 w-full lg:w-[70%]">
               <div>
-                <div className="text-5xl font-bold text-primary pb-2">
+                <div className="text-5xl font-bold text-primary pb-2 text-center lg:text-left">
                   Ubah Hidupmu
                 </div>
-                <div className="text-5xl font-bold text-black">
+                <div className="text-5xl font-bold text-black text-center lg:text-left">
                   Sekarang Juga
                 </div>
               </div>
-              <div className="text-black text-xl w-[70%]">
+              <div className="text-black text-xl w-full lg:w-[70%] text-center lg:text-left px-11 md:px-0">
                 Belajar menjadi software engineer secara online/remote selama 3
                 - 6 bulan sampai diterima kerja, tanpa bayar di depan (Income
                 Share Agreement).
               </div>
-              <Link
-                to={""}
-                className="btn btn-primary w-48 text-white capitalize font-semibold rounded"
-              >
-                Daftar Sekarang
-              </Link>
+              <div className="w-full flex md:justify-start justify-center">
+                <Link
+                  to={""}
+                  className="btn btn-primary w-48 text-white capitalize font-semibold rounded"
+                >
+                  Daftar Sekarang
+                </Link>
+              </div>
             </div>
-            <div className="w-[30%]">
+            <div className="w-full lg:w-[30%] flex justify-center">
               <div className="card w-72 bg-base-100 shadow-xl">
                 <figure className="rounded-xl overflow-hidden">
                   <img
@@ -46,7 +48,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full grid grid-cols-2 xl:grid-cols-4 gap-5">
             <div className="flex justify-center items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-slate-200 flex justify-center items-center">
                 <FaChalkboardTeacher size={20} className="text-slate-500" />
@@ -84,179 +86,179 @@ const Home = () => {
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-11 bg-slate-100">
         <div className="w-full max-w-[1080px] text-black flex flex-col gap-3">
-          <div className="w-full flex flex-col justify-center items-center gap-11 py-11">
+          <div className="w-full flex flex-col justify-center items-center gap-11 py-11 px-7 lg:px-0">
             <div className="w-full flex flex-col justify-center items-center gap-4">
-              <div className="text-black text-2xl font-bold">
+              <div className="text-black text-2xl font-bold text-center">
                 500+ lulusan bekerja di perusahaan ini
               </div>
-              <div className="text-slate-500 text-xl font-semibold">
+              <div className="text-slate-500 text-xl font-semibold text-center">
                 Fazztrack menjamin lulusan mendapat kesempatan membagun karir di
                 perusahaan impian.
               </div>
             </div>
-            <div className="w-full max-w-[1080px] grid grid-cols-8 gap-4">
-              <div className="w-32 h-20">
+            <div className="w-full max-w-[1080px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 justify-items-center xl:gap-4">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-1.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-2.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-3.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-4.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-5.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-6.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-7.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-8.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-9.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-10.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-11.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-12.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-13.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-14.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-15.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-16.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-17.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-18.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-19.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-20.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-21.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-22.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20">
+              <div className="w-28 h-20">
                 <img
                   src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_contain&s_87x49/img/company-list/company-23.png"
                   alt=""
                   className="w-24"
                 />
               </div>
-              <div className="w-32 h-20 flex justify-center items-cstart">
+              <div className="w-28 h-20 flex justify-center items-cstart">
                 <div className="text-3xl text-black font-bold">600+</div>
               </div>
             </div>
@@ -264,17 +266,17 @@ const Home = () => {
         </div>
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-11 py-11">
-        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3">
+        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3 px-7 md:px-0">
           <div className="w-full flex flex-col justify-center items-center gap-2 py-11">
-            <div className="text-black text-2xl font-bold">
+            <div className="text-black text-2xl font-bold text-center">
               Pilihan Bootcamp Fazztrack
             </div>
-            <div className="text-slate-500 text-xl font-semibold">
+            <div className="text-slate-500 text-xl font-semibold text-center">
               Bootcamp dilaksanakan berdasarkan kurikulum yang telah disusun
               untuk kamu siap bekerja.
             </div>
           </div>
-          <div className="w-full flex justify-between items-start gap-5">
+          <div className="w-full flex flex-col md:flex-row justify-between items-start gap-5 ">
             <div className="card flex-1 bg-base-100">
               <figure className="rounded-2xl">
                 <img
@@ -324,22 +326,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center gap-11 py-16">
-        <div className="w-full flex justify-between items-center bg-slate-300 max-w-[1080px] p-14 rounded-3xl">
+      <section className="w-full flex flex-col justify-center items-center gap-11 md:py-16">
+        <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center gap-5 bg-slate-300 max-w-[1080px] p-14 md:rounded-3xl">
           <div className="max-w-[700px] flex flex-col gap-7">
-            <div className="text-black text-3xl font-semibold">
+            <div className="text-black text-3xl font-semibold text-center md:text-left">
               Tidak memiliki banyak waktu?
             </div>
-            <div className="text-black text-2xl">
+            <div className="text-black text-2xl text-center md:text-left">
               Coba program Fazztrack Mini Bootcamp! Belajar dengan menyesuaikan
               waktumu dan bisa langsung disalurkan kerja.
             </div>
-            <Link
-              to={""}
-              className="btn btn-secondary w-48 text-white capitalize font-semibold rounded"
-            >
-              Lihat Mini Bootcamp
-            </Link>
+            <div className="w-full flex justify-center md:justify-start items-center">
+              <Link
+                to={""}
+                className="btn btn-secondary w-48 text-white capitalize font-semibold rounded"
+              >
+                Lihat Mini Bootcamp
+              </Link>
+            </div>
           </div>
           <div>
             <img src={miniBootcampImg} alt="" />
@@ -348,8 +352,8 @@ const Home = () => {
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-11 py-11 bg-secondary">
         <div className="w-full max-w-[1080px] text-black flex flex-col gap-3 pb-16">
-          <div className="w-full grid grid-cols-3 gap-4">
-            <div className="bg-secondary w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4 px-7 lg:px-0">
+            <div className="bg-secondary w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-white text-2xl font-semibold">
                 Keunggulan Fazztrack
               </div>
@@ -358,7 +362,7 @@ const Home = () => {
                 Engineer profesional sampai di salurkan kerja.
               </div>
             </div>
-            <div className="bg-white w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+            <div className="bg-white w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-black text-2xl font-semibold flex justify-start items-center gap-3">
                 <div className="w-20 h-16">
                   <img
@@ -381,7 +385,7 @@ const Home = () => {
                 Pelajari Lebih Lanjut <AiOutlineArrowRight size={20} />
               </Link>
             </div>
-            <div className="bg-white w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+            <div className="bg-white w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-black text-2xl font-semibold flex justify-start items-center gap-3">
                 <div className="w-20 h-16">
                   <img
@@ -404,7 +408,7 @@ const Home = () => {
                 Pelajari Lebih Lanjut <AiOutlineArrowRight size={20} />
               </Link>
             </div>
-            <div className="bg-white w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+            <div className="bg-white w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-black text-2xl font-semibold flex justify-start items-center gap-3">
                 <div className="w-20 h-16">
                   <img
@@ -427,7 +431,7 @@ const Home = () => {
                 Pelajari Lebih Lanjut <AiOutlineArrowRight size={20} />
               </Link>
             </div>
-            <div className="bg-white w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+            <div className="bg-white w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-black text-2xl font-semibold flex justify-start items-center gap-3">
                 <div className="w-20 h-16">
                   <img
@@ -450,7 +454,7 @@ const Home = () => {
                 Pelajari Lebih Lanjut <AiOutlineArrowRight size={20} />
               </Link>
             </div>
-            <div className="bg-white w-[320px] h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
+            <div className="bg-white w-full sm:w-[80%] md:w-[320px] md:h-[320px] rounded-xl p-5 flex flex-col justify-center gap-4">
               <div className="text-black text-2xl font-semibold flex justify-start items-center gap-3">
                 <div className="w-20 h-16">
                   <img
@@ -477,7 +481,7 @@ const Home = () => {
         </div>
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-11 py-11 bg-primary/10">
-        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3 pb-16">
+        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3 pb-16 px-4 md:px-0">
           <div className="w-full flex justify-between items-center my-9">
             <div className="flex flex-col gap-2">
               <div className="text-black text-2xl font-bold flex justify-start items-center gap-1">
@@ -593,18 +597,18 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center gap-11 py-11">
+      <section className="w-full flex flex-col justify-center items-center gap-11 py-7">
         <div className="w-full max-w-[1080px] text-black flex flex-col gap-3">
           <div className="w-full flex justify-between items-center my-9">
-            <div className="flex flex-col gap-2">
+            <div className="px-3 md:px-0 flex flex-col gap-2">
               <div className="text-black text-2xl font-bold">
                 Cerita Alumni Bootcamp
               </div>
-              <div className="text-slate-500 text-xl font-semibold">
+              <div className=" text-slate-500 text-xl md:font-semibold">
                 Cerita perjalanan heroik alumni bootcamp
               </div>
             </div>
-            <div>
+            <div className="hidden lg:block ">
               <Link
                 to={""}
                 className="btn btn-neutral rounded bg-slate-50 border-slate-200 hover:bg-slate-200 hover:border-slate-200 capitalize text-black font-semibold text-lg"
@@ -613,80 +617,90 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full flex justify-between items-center gap-5">
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Lulusan Pesantren juga Bisa jadi DevOps Engineer
-                </h2>
-                <div>
-                  Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
-                  mudah. Menjalani dua kegiatan secara bersamaan membuat saya
-                  merasa kurang waktu belajar pemrograman disekolah. Banyak
-                  tantangan yang harus dihadapi. Mulai dari bagaimana membagi
-                  waktu antara mengaji, belajar akademik dan upgrade skills
-                  programming.
+          <div className="w-full overflow-scroll py-7">
+            <div className="w-[1080px] flex justify-between items-center gap-5">
+              <div className="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">
+                    Lulusan Pesantren juga Bisa jadi DevOps Engineer
+                  </h2>
+                  <div>
+                    Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
+                    mudah. Menjalani dua kegiatan secara bersamaan membuat saya
+                    merasa kurang waktu belajar pemrograman disekolah. Banyak
+                    tantangan yang harus dihadapi. Mulai dari bagaimana membagi
+                    waktu antara mengaji, belajar akademik dan upgrade skills
+                    programming.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Lulusan Pesantren juga Bisa jadi DevOps Engineer
-                </h2>
-                <div>
-                  Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
-                  mudah. Menjalani dua kegiatan secara bersamaan membuat saya
-                  merasa kurang waktu belajar pemrograman disekolah. Banyak
-                  tantangan yang harus dihadapi. Mulai dari bagaimana membagi
-                  waktu antara mengaji, belajar akademik dan upgrade skills
-                  programming.
+              <div className="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">
+                    Lulusan Pesantren juga Bisa jadi DevOps Engineer
+                  </h2>
+                  <div>
+                    Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
+                    mudah. Menjalani dua kegiatan secara bersamaan membuat saya
+                    merasa kurang waktu belajar pemrograman disekolah. Banyak
+                    tantangan yang harus dihadapi. Mulai dari bagaimana membagi
+                    waktu antara mengaji, belajar akademik dan upgrade skills
+                    programming.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Lulusan Pesantren juga Bisa jadi DevOps Engineer
-                </h2>
-                <div>
-                  Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
-                  mudah. Menjalani dua kegiatan secara bersamaan membuat saya
-                  merasa kurang waktu belajar pemrograman disekolah. Banyak
-                  tantangan yang harus dihadapi. Mulai dari bagaimana membagi
-                  waktu antara mengaji, belajar akademik dan upgrade skills
-                  programming.
+              <div className="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://www.fazztrack.com/_ipx/f_webp&q_100&fit_cover&s_586x328/img/alumni-story/alumni-story-1.png"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">
+                    Lulusan Pesantren juga Bisa jadi DevOps Engineer
+                  </h2>
+                  <div>
+                    Menjadi seorang santri sekaligus pelajar, bukanlah hal yang
+                    mudah. Menjalani dua kegiatan secara bersamaan membuat saya
+                    merasa kurang waktu belajar pemrograman disekolah. Banyak
+                    tantangan yang harus dihadapi. Mulai dari bagaimana membagi
+                    waktu antara mengaji, belajar akademik dan upgrade skills
+                    programming.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div className="md:hidden w-full flex justify-center">
+            <Link
+              to={""}
+              className="btn btn-neutral rounded bg-slate-50 border-slate-200 hover:bg-slate-200 hover:border-slate-200 capitalize text-black font-semibold text-lg"
+            >
+              Lihat cerita lainnya
+            </Link>
+          </div>
         </div>
       </section>
       <section className="w-full flex flex-col justify-center items-center gap-11 py-11">
-        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3">
+        <div className="w-full max-w-[1080px] text-black flex flex-col gap-3 px-3 md:px-0">
           <div className="w-full flex flex-col justify-center items-center gap-5 py-3">
-            <div className="text-black text-2xl capitalize font-bold">
+            <div className="text-black text-xl md:text-2xl capitalize font-bold text-center">
               Pertanyaan yang sering ditanyakan
             </div>
-            <div className="text-xl text-slate-500">
+            <div className="text-lg md:text-xl text-slate-500 text-center">
               Bootcamp dilaksanakan berdasarkan kurikulum yang telah disusun
               untuk kamu siap bekerja.
             </div>
@@ -767,13 +781,13 @@ const Home = () => {
         </div>
       </section>
       <section className="w-full h-72 bg-primary/10 flex flex-col justify-center items-center gap-11">
-        <div className="text-3xl font-semibold text-black">
+        <div className="text-2xl md:text-3xl font-semibold text-black text-center">
           Tunggu Apa Lagi? GabungBersama Kami!
         </div>
         <Link className="btn btn-primary text-white capitalize font-semibold text-lg">
           Daftar Sekarang
         </Link>
-      </section> */}
+      </section>
       <Footer />
     </>
   );
